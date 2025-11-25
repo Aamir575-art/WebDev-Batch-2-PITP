@@ -1,0 +1,73 @@
+.static-box {
+    background-color: lightcoral;
+    color: white;
+    padding: 20px;
+    border: 2px dotted black;
+    /* even if you set these, they won't move the box */
+    position: static;
+}
+
+.relative-box {
+    background-color: lightskyblue;
+    color: white;
+    padding: 20px;
+    border: 2px solid blue;
+
+    position: relative;
+    /* moves 30px down from its original top edge and 20px right */
+}
+
+.Normal-box{
+    background-color: lightgray;
+    padding: 20px;
+    border: 2px solid gray;
+    /* this box doesnot move up to fill the relative box's original spot */
+}
+
+.parent-relative{
+    background-color:#29d1a77b;
+    padding: 50px;
+    border: 3px dashed black;
+    height: 200px;
+    /* 1.this makes it the positioning context for its absolute child */
+    position: relative;
+}
+
+.absolute-box{
+    background-color: rgb(45, 167, 45);
+    color: black;
+    padding: 10px;
+    border: 2px solid green;
+    width: 100px;
+
+    position:absolute;
+    /* 2. positions relative to the top-right corner of the parent */
+    top: 10px;
+    right: 10px;
+}
+
+.absolute-box2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid green;
+    background-color: rgb(26, 238, 33);
+}
+
+.fixed-box{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    /* Spans the full width of the viewport */
+    text-align: center;
+
+    position: fixed;
+    /* locks it to the bottom of the browser window */
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensures it is on top of other content */
+}
