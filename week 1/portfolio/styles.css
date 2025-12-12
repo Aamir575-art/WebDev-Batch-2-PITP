@@ -2,18 +2,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color:rgb(251, 252, 248)
 
 }
-
 .header{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background-color: darkblue;
-    padding: 10px;
+    background-color:rgb(205, 200, 203);
+    color: #070000;
+    text-align: center;
+}
 
+a{
+    text-decoration: none;
+    color:black;
+    margin-right: 60px;
 
 }
+
+
 
 
 
