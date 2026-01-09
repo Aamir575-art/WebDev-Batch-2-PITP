@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronForge Gym | Build Your Legacy</title>
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">IRON<span>FORGE</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">About</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#membership">Pricing</a></li>
+                <li><a href="#contact" class="btn btn-primary" style="color: white; padding: 8px 20px;">Join Now</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sculpt Your <br><span>Perfect Body</span></h1>
+            <p>Join the elite fitness community. World-class equipment, expert trainers, and an environment built for success.</p>
+            <div class="hero-buttons">
+                <a href="#membership" class="btn btn-primary">Start Now</a>
+                <a href="#classes" class="btn btn-outline">View Classes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="section-padding features">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Why Choose <span>Us</span></h2>
+                <p>We provide more than just equipment. We provide the path to a healthier lifestyle.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <i class="fas fa-dumbbell feature-icon"></i>
+                    <h3>Premium Equipment</h3>
+                    <p>Train with the latest biomechanically engineered machinery for optimal muscle engagement.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-clock feature-icon"></i>
+                    <h3>24/7 Access</h3>
+                    <p>Your fitness journey doesn't have a schedule. Access the gym whenever inspiration strikes.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-users feature-icon"></i>
+                    <h3>Community</h3>
+                    <p>Join a supportive community of like-minded individuals pushing each other to succeed.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <i class="fas fa-shower feature-icon"></i>
+                    <h3>Luxury Locker Rooms</h3>
+                    <p>Clean, spacious locker rooms with sauna and steam room access to relax post-workout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLASSES SECTION -->
+    <section id="classes" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our <span>Classes</span></h2>
+                <p>From high intensity to deep relaxation, we have a class for every goal.</p>
+            </div>
+            <div class="classes-grid">
+                <div class="class-card reveal">
+                    <img src="https://picsum.photos/seed/crossfit/600/800.jpg" alt="Crossfit">
+                    <div class="class-overlay">
+                        <div class="class-info">
+                            <h3>CrossFit</h3>
+                            <p>High-intensity functional movements performed at a high intensity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card reveal">
+                    <img src="https://picsum.photos/seed/yoga/600/800.jpg" alt="Yoga">
+                    <div class="class-overlay">
+                        <div class="class-info">
+                            <h3>Power Yoga</h3>
+                            <p>Build strength, flexibility, and mental focus through dynamic poses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-card reveal">
+                    <img src="https://picsum.photos/seed/boxing/600/800.jpg" alt="Boxing">
+                    <div class="class-overlay">
+                        <div class="class-info">
+                            <h3>Boxing</h3>
+                            <p>Improve your coordination, agility, and stamina with our boxing pros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI CALCULATOR SECTION -->
+    <section class="section-padding bmi-section">
+        <div class="container">
+            <div class="bmi-container reveal">
+                <div class="bmi-text">
+                    <h3>Check Your BMI</h3>
+                    <p>Body Mass Index (BMI) is a measure of body fat based on height and weight. Use our calculator to see where you stand.</p>
+                    <ul>
+                        <li><i class="fas fa-check" style="color:var(--primary-color)"></i> Instant Results</li>
+                        <li><i class="fas fa-check" style="color:var(--primary-color)"></i> Health Assessment</li>
+                        <li><i class="fas fa-check" style="color:var(--primary-color)"></i> Goal Setting</li>
+                    </ul>
+                </div>
+                <div class="bmi-form-container">
+                    <form class="bmi-form" id="bmiForm">
+                        <div class="form-group">
+                            <label>Height (cm)</label>
+                            <input type="number" id="height" placeholder="e.g. 175" required min="50" max="300">
+                        </div>
+                        <div class="form-group">
+                            <label>Weight (kg)</label>
+                            <input type="number" id="weight" placeholder="e.g. 70" required min="20" max="300">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Calculate BMI</button>
+                        <div class="bmi-result" id="bmiResult"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINERS SECTION -->
+    <section id="trainers" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Expert <span>Trainers</span></h2>
+                <p>Meet the team dedicated to helping you reach your potential.</p>
+            </div>
+            <div class="trainers-grid">
+                <div class="trainer-card reveal">
+                    <div class="trainer-img">
+                        <img src="https://picsum.photos/seed/trainer1/400/500.jpg" alt="Trainer">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Alex Strong</h3>
+                        <span>Bodybuilding Coach</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card reveal">
+                    <div class="trainer-img">
+                        <img src="https://picsum.photos/seed/trainer2/400/500.jpg" alt="Trainer">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Sarah Power</h3>
+                        <span>CrossFit Specialist</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="trainer-card reveal">
+                    <div class="trainer-img">
+                        <img src="https://picsum.photos/seed/trainer3/400/500.jpg" alt="Trainer">
+                    </div>
+                    <div class="trainer-info">
+                        <h3>Mike Fit</h3>
+                        <span>HIIT Expert</span>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP SECTION -->
+    <section id="membership" class="section-padding membership-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Membership <span>Plans</span></h2>
+                <p>Choose the plan that fits your goals and budget. No hidden fees.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card reveal">
+                    <h3>Basic</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Access to gym equipment</li>
+                        <li><i class="fas fa-check-circle"></i> Locker room access</li>
+                        <li><i class="fas fa-check-circle"></i> Free Wi-Fi</li>
+                        <li><i class="fas fa-times-circle" style="color:#555"></i> Group classes</li>
+                        <li><i class="fas fa-times-circle" style="color:#555"></i> Personal Trainer</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" onclick="selectPlan('Basic')">Choose Plan</a>
+                </div>
+                <div class="price-card featured reveal">
+                    <div style="position: absolute; top:0; left:50%; transform:translate(-50%, -50%); background:var(--primary-color); color:white; padding:5px 15px; border-radius:20px; font-size:0.8rem; font-weight:bold;">MOST POPULAR</div>
+                    <h3>Pro</h3>
+                    <div class="price">$59<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> All Basic features</li>
+                        <li><i class="fas fa-check-circle"></i> Access to group classes</li>
+                        <li><i class="fas fa-check-circle"></i> Sauna & Steam room</li>
+                        <li><i class="fas fa-check-circle"></i> 1 Personal Training Session</li>
+                        <li><i class="fas fa-times-circle" style="color:#555"></i> Nutrition Plan</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" onclick="selectPlan('Pro')">Choose Plan</a>
+                </div>
+                <div class="price-card reveal">
+                    <h3>Elite</h3>
+                    <div class="price">$99<span>/mo</span></div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> All Pro features</li>
+                        <li><i class="fas fa-check-circle"></i> Unlimited Personal Training</li>
+                        <li><i class="fas fa-check-circle"></i> Custom Nutrition Plan</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive merchandise</li>
+                        <li><i class="fas fa-check-circle"></i> Guest pass privileges</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" onclick="selectPlan('Elite')">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">IRON<span>FORGE</span></a>
+                    <p style="margin-top: 20px;">Transform your body and mind with the best fitness experience in town.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right:10px;"></i> jamshoro society phase 2</li>
+                        <li><i class="fas fa-phone" style="margin-right:10px;"></i> 03443056840</li>
+                        <li><i class="fas fa-envelope" style="margin-right:10px;"></i> Aamirkhan804.804@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for latest updates and offers.</p>
+                    <form id="newsletterForm" style="display: flex; gap: 10px; margin-top: 15px;">
+                        <input type="email" placeholder="Your Email" required style="padding: 10px; border-radius: 4px; border:none; flex:1;">
+                        <button type="submit" class="btn btn-primary" style="padding: 10px 15px;"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IronForge Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast" class="toast">Action Successful!</div>
+    <script src="script.js"></script>
+</body>
+</html>
